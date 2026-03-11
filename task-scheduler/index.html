@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Tarefas</h1>
+        <form id="task-form">
+            <div class="form-group">
+                <label for="task-name">Nome da tarefa:</label>
+                <input type="text" id="task-name" required placeholder="Digite a tarefa...">
+            </div>
+            <div class="form-group">
+                <label for="task-datetime">Data e Hora:</label>
+                <input type="datetime-local" id="task-datetime" required>
+            </div>
+            <input type="hidden" id="task-edit-index" value="">
+            <button type="submit" id="submit-btn">Adicionar tarefa</button>
+        </form>
+        
+        <h2>Lista de Tarefas</h2>
+        <ul id="task-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
